@@ -42,7 +42,7 @@ function nextSequence() {
     userClickPattern = [];
 
     level++;
-    $("#level-title").text("Level " + level);
+    $('#level-title').text('Level ' + level);
 
     //create random number 0 - 3
     var randomNumber = Math.floor(Math.random() * 4);
@@ -52,7 +52,7 @@ function nextSequence() {
 
     $('#' + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
     
-    playSound(userChosenColour);
+    playSound(randomChosenColour);
 }
 
 //function to play sounds
